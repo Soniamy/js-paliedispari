@@ -8,8 +8,11 @@
 // ALTRIMENTI NON E' PALINDROMA
 let parola = prompt('Inserisci parola');
 function reverseString(string) {
+    // Step 1. Uso il metodo split() per restituire un nuovo array
     let splitString = string.split('');
+    // Step 2. Uso il metodo reverse() per invertire l'array appena creato
     let reverseArrey = splitString.reverse();
+    // Step 3. Uso il metodo join() per unire tutti gli elementi della stringa in un array
     let joinArray = reverseArrey.join('');
     if (parola == joinArray) {
         return parola + ' è palindroma';
